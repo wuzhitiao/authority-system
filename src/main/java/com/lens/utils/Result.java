@@ -50,7 +50,7 @@ public class Result<T> {
      */
     public static <T> Result<T> error() {
         Result<T> result = new Result<T>();
-        result.setSuccess(true);
+        result.setSuccess(false);
         result.setCode(ResultCode.ERROR);
         result.setMessage("执行失败");
         return result;
